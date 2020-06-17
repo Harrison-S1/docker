@@ -1,0 +1,11 @@
+---
+version: "2.1"
+services:
+  ubooquity:
+    image: adolfintel/speedtest
+    container_name: speedtest
+    environment:
+      - MODE=standalone
+    ports:
+      - 80:80
+    restart: unless-stopped
